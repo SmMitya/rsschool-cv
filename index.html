@@ -98,6 +98,72 @@
         </div>
       </div>
     </section>
+
+    <section class="skills" id="skills">
+      <div class="container skills__container underline">
+        <h2 class="title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <span class="skills__progress" style="width: 95%;">HTML5/CSS3</span>  
+          </li>
+          <li class="skills__item">
+            <span class="skills__progress" style="width: 90%;">SASS/SCSS</span>  
+          </li>
+          <li class="skills__item">
+           <span class="skills__progress" style="width: 70%;"> GULP</span>  
+          </li>
+          <li class="skills__item">
+            <span class="skills__progress" style="width: 70%;">GIT</span>  
+          </li>
+          <li class="skills__item">
+            <span class="skills__progress" style="width: 80%;">BEM</span>  
+          </li>
+          <li class="skills__item">
+            <span class="skills__progress" style="width: 80%;">Responsive and cross-browser layout</span>  
+          </li>
+          <li class="skills__item">
+            <span class="skills__progress" style="width: 70%;">SVG</span>  
+          </li>
+          <li class="skills__item">
+            <span class="skills__progress" style="width: 50%;">Javascript(ES6)/Jquery</span>  
+          </li>
+          <li class="skills__item">
+            <span class="skills__progress" style="width: 70%;">Figma/Photoshop</span>  
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="example" id="example">
+      <div class="container example__container underline">
+        <pre class="example__code">
+          <code class="example__code">
+            "use strict";
+  
+              let salaries = {
+                "John": 100,
+                "Pete": 300,
+                "Mary": 250
+              };
+  
+              function sumSalaries(salaries) {
+                if (!salaries) {
+                  return console.log('null');
+                }
+                let count = null;
+  
+                for (let value of Object.values(salaries)) {
+                  count += value;
+                }
+  
+                return console.log(count);
+              }
+  
+              sumSalaries(salaries);
+          </code>
+        </pre>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">

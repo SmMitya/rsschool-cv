@@ -149,6 +149,7 @@ body {
 
   font-family: var(--body-font-sec);
   font-size: 20px;
+  font-weight: 700;
   color: var(--color-dark-blue);
   text-align: center;
 }
@@ -289,8 +290,44 @@ body {
   height: 250px;
 }
 /*==================== Skills ====================*/
+.skills__container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
+.skills__item {
+  margin: 0 auto;
+  max-width: 700px;
+
+  background-color: var(--color-green-light);
+  border: 1px solid var(--color-dark-blue);
+}
+
+.skills__item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.skills__progress {
+  padding: 5px;
+  display: block;
+  background-color: var(--color-dark-green);
+}
 /*==================== Example ====================*/
+.example__container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.example__code {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  
+  font-weight: 500;
+  font-family: var(--body-font-main);
+  line-height: normal;
+  color: var(--color-dark);
+}
 /*==================== Education ====================*/
 /*==================== English ====================*/
 
