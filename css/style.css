@@ -329,8 +329,65 @@ body {
   color: var(--color-dark);
 }
 /*==================== Education ====================*/
+.education__container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.education__list {
+  padding-left: 100px;
+  list-style-type: circle;
+}
+
+.education__item::marker {
+  color: var(--color-dark-blue);
+}
+
+.education__item-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--color-dark-blue);
+  
+}
+
+.education__sublist {
+  padding-left: 40px;
+  list-style-type: disclosure-open;
+}
+
+.education__subitem::marker {
+  color: var(--color-dark-green);
+}
+
+.education__sublink {
+  font-weight: 700;
+  color: var(--color-dark);
+  text-decoration: underline;
+
+  transition: background-color 0.5s linear,
+              color 0.3s linear;
+}
+
+.education__sublink:hover {
+  color: var(--color-dark-green);
+  background-color: var(--color-dark-blue);
+}
 /*==================== English ====================*/
+.english__container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
+.english__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.english__text {
+  font-size: 50px;
+  font-weight: 500;
+}
 .footer {
-
+  background-color: var(--color-green-light);
 }
