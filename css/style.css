@@ -88,6 +88,9 @@ a {
 }
 
 /*==================== REUSABLE CSS CLASSES ====================*/
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   display: flex;
@@ -388,6 +391,41 @@ body {
   font-size: 50px;
   font-weight: 500;
 }
+
+/*==================== Footer ====================*/
 .footer {
   background-color: var(--color-green-light);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.footer__link {
+  display: flex;
+  column-gap: 5px;
+
+  color: var(--color-light);
+
+  transition: color 0.3s linear;
+}
+
+.footer__link-img {
+  fill: currentColor;
+}
+
+.footer__link:hover {
+  color: var(--color-dark-blue);
+}
+
+.footer__logo {
+  width: 100px;
+  height: 50px;
 }
