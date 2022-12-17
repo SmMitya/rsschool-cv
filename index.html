@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CV webdeveloper Dmitry Smotrov</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          SmMitya <span>HardWork</span>
+        </a>
+  
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#contact">Contacts</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#personal">Personal information</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#skills">Skills</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#example">Code examples</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#education">Education</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#english">English</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="container hero__container underline">
+        <div class="hero__text">
+          <h2 class="hero__subtitle">My name is</h2>
+          <h1 class="hero__title">Dmitry Smotrov</h1>
+          <p class="hero__info">and I am <span>Web Developer</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact__container underline">
+        <h2 class="title">My Contacts</h2>
+        <address class="contact__inner">
+          <ul class="contact__list">
+            <li class="contact__item">
+              <p class="contact__text">Phone:</p>
+              <a class="contact__link" href="tel:+7978-834-74-67">+7(978) 8347467</a>
+            </li>
+            <li class="contact__item">
+              <p class="contact__text">E-mail:</p>
+              <a class="contact__link" href="mailto:smotrov1991@yandex.ru">smotrov1991@yandex.ru</a>
+            </li>
+            <li class="contact__item">
+              <p class="contact__text">Telegram:</p>
+              <a class="contact__link" href="https://t.me/MrSmokie131" target="_blank">@MrSmokie131</a>
+            </li>
+            <li class="contact__item">
+              <p class="contact__text">GitHub:</p>
+              <a class="contact__link" href="https://github.com/smmitya" target="_blank">SmMitya</a>
+            </li>
+            <li class="contact__item">
+              <p class="contact__text">Discord:</p>
+              <a class="contact__link" href="https://discordapp.com/users/smmitya№7463/" target="_blank">smmitya#7463</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </section>
+
+    <section class="personal" id="personal">
+      <div class="container personal__container underline">
+        <h2 class="title">Personal information</h2>
+        <div class="personal__content">
+          <div class="personal__text">
+            <p>I am markup developer, and currently I am working hard to retrain as a front-end developer. 
+              All my free time I make up websites and study new technologies.I am 31 years old and I am constantly developing and improving, because my dream is to do what I love and interesting.</p>
+          </div>
+          <img class="personal__img" src="img/personal/coder.png" alt="coder notebook" width="250" height="250">
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container skills__container underline">
+        <h2 class="title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <span class="skills__progress" style="width: 95%;">HTML5/CSS3</span>  
+          </li>
+          <li class="skills__item">
+            <span class="skills__progress" style="width: 90%;">SASS/SCSS</span>  
+          </li>
+          <li class="skills__item">
+           <span class="skills__progress" style="width: 70%;"> GULP</span>  
+          </li>
+          <li class="skills__item">
+            <span class="skills__progress" style="width: 70%;">GIT</span>  
+          </li>
+          <li class="skills__item">
+            <span class="skills__progress" style="width: 80%;">BEM</span>  
+          </li>
+          <li class="skills__item">
+            <span class="skills__progress" style="width: 80%;">Responsive and cross-browser layout</span>  
+          </li>
+          <li class="skills__item">
+            <span class="skills__progress" style="width: 70%;">SVG</span>  
+          </li>
+          <li class="skills__item">
+            <span class="skills__progress" style="width: 50%;">Javascript(ES6)/Jquery</span>  
+          </li>
+          <li class="skills__item">
+            <span class="skills__progress" style="width: 70%;">Figma/Photoshop</span>  
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="example" id="example">
+      <div class="container example__container underline">
+        <h2 class="title">Code examples</h2>
+        <pre class="example__code">
+          <code class="example__code">
+            "use strict";
+  
+              let salaries = {
+                "John": 100,
+                "Pete": 300,
+                "Mary": 250
+              };
+  
+              function sumSalaries(salaries) {
+                if (!salaries) {
+                  return console.log('null');
+                }
+                let count = null;
+  
+                for (let value of Object.values(salaries)) {
+                  count += value;
+                }
+  
+                return console.log(count);
+              }
+  
+              sumSalaries(salaries);
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <div class="container education__container underline">
+        <h2 class="title">Education</h2>
+        <ul class="education__list">
+          <li class="education__item">
+            <span class="education__item-title">University:</span> Admiral Ushakov Maritime State University, engineer navigator
+          </li>
+          <li class="education__item">
+            <span class="education__item-title">Courses:</span>
+            <ul class="education__sublist">
+              <li class="education__subitem">
+                <a class="education__sublink" href="https://from0to1.com.ua/" target="_blank">from 0 to 1 by Vadim Prokopchuk (Markup Developer)</a>
+              </li>
+              <li class="education__subitem">
+                <a class="education__sublink" href="https://kazanina-online.ru/" target="_blank">Javascript course by Yana Kazanina</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="english" id="english">
+      <div class="container english__container">
+        <h2 class="title">English</h2>
+        <div class="english__content">
+          <p class="english__text">B1</p>
+          <img src="img/english/motivational.png" alt="motivational">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <time class="date">2022</time>
+
+      <a class="footer__link" href="https://github.com/smmitya" target="_blank">
+        <svg class="footer__link-img" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"/></svg>
+        My GITHUB
+      </a>
+
+      <a class="footer__logo" href="https://rs.school/js/" target="_blank">
+        <img src="img/footer/rs-school.svg" alt="logo rs-school" width="100" height="50">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
